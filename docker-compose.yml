@@ -1,0 +1,12 @@
+version: '3'
+services:
+  api:
+    build: .
+    environment:
+      - REDIS_URL=redis://redis:6379/
+    ports:
+      - 3000:80
+    links:
+      - redis
+  redis:
+    image: redis:4-stretch

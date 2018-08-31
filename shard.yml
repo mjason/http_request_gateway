@@ -1,0 +1,19 @@
+name: http_request_gateway
+version: 0.1.0
+
+authors:
+  - mj <tywf91@gmail.com>
+
+targets:
+  http_request_gateway:
+    main: src/http_request_gateway.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  redis:
+    github: stefanwille/crystal-redis
+    version: ~> 2.1.0
+
+crystal: 0.26.1
+
